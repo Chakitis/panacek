@@ -33,14 +33,15 @@
             this.tlacitkoDoprava = new System.Windows.Forms.Button();
             this.tlacitkoLeva = new System.Windows.Forms.Button();
             this.tlacitkoDolu = new System.Windows.Forms.Button();
+            this.pocitadloRyba = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // kresliciPlocha
             // 
             this.kresliciPlocha.BackColor = System.Drawing.Color.Azure;
-            this.kresliciPlocha.Location = new System.Drawing.Point(12, 12);
+            this.kresliciPlocha.Location = new System.Drawing.Point(10, 10);
             this.kresliciPlocha.Name = "kresliciPlocha";
-            this.kresliciPlocha.Size = new System.Drawing.Size(397, 384);
+            this.kresliciPlocha.Size = new System.Drawing.Size(400, 400);
             this.kresliciPlocha.TabIndex = 0;
             this.kresliciPlocha.Paint += new System.Windows.Forms.PaintEventHandler(this.kresliciPlocha_Paint);
             // 
@@ -60,7 +61,7 @@
             // 
             this.tlacitkoDoprava.BackColor = System.Drawing.Color.Azure;
             this.tlacitkoDoprava.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tlacitkoDoprava.Location = new System.Drawing.Point(252, 462);
+            this.tlacitkoDoprava.Location = new System.Drawing.Point(283, 476);
             this.tlacitkoDoprava.Name = "tlacitkoDoprava";
             this.tlacitkoDoprava.Size = new System.Drawing.Size(75, 23);
             this.tlacitkoDoprava.TabIndex = 2;
@@ -72,7 +73,7 @@
             // 
             this.tlacitkoLeva.BackColor = System.Drawing.Color.Azure;
             this.tlacitkoLeva.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tlacitkoLeva.Location = new System.Drawing.Point(76, 462);
+            this.tlacitkoLeva.Location = new System.Drawing.Point(43, 476);
             this.tlacitkoLeva.Name = "tlacitkoLeva";
             this.tlacitkoLeva.Size = new System.Drawing.Size(75, 23);
             this.tlacitkoLeva.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             this.tlacitkoDolu.BackColor = System.Drawing.Color.Azure;
             this.tlacitkoDolu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tlacitkoDolu.Location = new System.Drawing.Point(164, 500);
+            this.tlacitkoDolu.Location = new System.Drawing.Point(164, 536);
             this.tlacitkoDolu.Name = "tlacitkoDolu";
             this.tlacitkoDolu.Size = new System.Drawing.Size(75, 23);
             this.tlacitkoDolu.TabIndex = 4;
@@ -92,12 +93,27 @@
             this.tlacitkoDolu.UseVisualStyleBackColor = false;
             this.tlacitkoDolu.Click += new System.EventHandler(this.tlacitkoDolu_Click);
             // 
+            // pocitadloRyba
+            // 
+            this.pocitadloRyba.BackColor = System.Drawing.Color.Black;
+            this.pocitadloRyba.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pocitadloRyba.ForeColor = System.Drawing.Color.White;
+            this.pocitadloRyba.Location = new System.Drawing.Point(177, 466);
+            this.pocitadloRyba.MaxLength = 100;
+            this.pocitadloRyba.Name = "pocitadloRyba";
+            this.pocitadloRyba.ReadOnly = true;
+            this.pocitadloRyba.Size = new System.Drawing.Size(46, 35);
+            this.pocitadloRyba.TabIndex = 5;
+            this.pocitadloRyba.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pocitadloRyba.TextChanged += new System.EventHandler(this.pocitadloRyba_TextChanged);
+            // 
             // oknoProgramu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(421, 580);
+            this.ClientSize = new System.Drawing.Size(420, 580);
+            this.Controls.Add(this.pocitadloRyba);
             this.Controls.Add(this.tlacitkoDolu);
             this.Controls.Add(this.tlacitkoLeva);
             this.Controls.Add(this.tlacitkoDoprava);
@@ -109,6 +125,7 @@
             this.Text = "Mnauka";
             this.Load += new System.EventHandler(this.oknoProgramu_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -119,6 +136,7 @@
         private System.Windows.Forms.Button tlacitkoDoprava;
         private System.Windows.Forms.Button tlacitkoLeva;
         private System.Windows.Forms.Button tlacitkoDolu;
+        private System.Windows.Forms.TextBox pocitadloRyba;
     }
 }
 

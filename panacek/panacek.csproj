@@ -110,6 +110,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\ryba.png" />
+    <Content Include="Properties\ryba.png" />
+    <None Include="Resources\ryba.bmp" />
     <None Include="bin\Debug\kocik.png" />
     <Content Include="kocik.png" />
   </ItemGroup>
